@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="trade">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aamed Trade | Sino-German Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../shared/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="https://aamed.tech" class="logo">Aamed<span
+                    style="color: var(--color-accent-main)">.trade</span></a>
+            <nav class="nav-links">
+                <a href="#products">Products</a>
+                <a href="#resources">Resources</a>
+                <a href="#matching">Matching</a>
+                <!-- External Links -->
+                <a href="https://aamed.tech" class="nav-subdomain" title="Main Domain">Main Site</a>
+                <a href="https://deu.aamed.tech" class="nav-subdomain" title="Exhibition Services">Exhibitions (DE)</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section">
+            <div class="container hero-content">
+                <div class="hero-badge">Sino-German Trade Bridge</div>
+                <h1>Accelerating Cross-Border <br><span class="gradient-text">Commerce</span></h1>
+                <p class="hero-subtitle">Connecting suppliers and buyers with a focus on high-tech industrial machinery
+                    and medical equipment.</p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn">Explore Products</a>
+                    <a href="#matching" class="btn btn-outline">Post Demand</a>
+                </div>
+            </div>
+            <div class="hero-bg-glow"></div>
+        </section>
+
+        <section id="products" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Products</h2>
+                    <p>Curated selection of premium industrial goods available for immediate export.</p>
+                </div>
+
+                <div class="filter-bar">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Medical</button>
+                    <button class="filter-btn">Industrial</button>
+                    <button class="filter-btn">Electronics</button>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="card product-card">
+                        <div class="product-image placeholder-image">
+                            <span>Image</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Medical</span>
+                            <h3>Precision Surgical Robot Arm</h3>
+                            <p>High-precision robotic assistance for minimally invasive surgery.</p>
+                            <a href="#" class="details-link">View Specs &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="card product-card">
+                        <div class="product-image placeholder-image">
+                            <span>Image</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Industrial</span>
+                            <h3>CNC Milling Center X5</h3>
+                            <p>5-axis simultaneous machining center for aerospace components.</p>
+                            <a href="#" class="details-link">View Specs &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="card product-card">
+                        <div class="product-image placeholder-image">
+                            <span>Image</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="category">Electronics</span>
+                            <h3>Industrial IoT Gateway</h3>
+                            <p>Robust edge computing gateway for smart factory data collection.</p>
+                            <a href="#" class="details-link">View Specs &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="section resources-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Trade Resources</h2>
+                    <p>Essential information for navigating the Sino-German trade landscape.</p>
+                </div>
+                <div class="grid-3">
+                    <div class="card resource-card">
+                        <h3>Import Regulations</h3>
+                        <p>Latest EU import standards and compliance checklists.</p>
+                        <a href="#" class="link-btn">Read Guide</a>
+                    </div>
+                    <div class="card resource-card">
+                        <h3>Logistics Partners</h3>
+                        <p>Verified freight forwarders specializing in China-Germany routes.</p>
+                        <a href="#" class="link-btn">View Directory</a>
+                    </div>
+                    <div class="card resource-card">
+                        <h3>Tariff Calculator</h3>
+                        <p>Estimate duties and taxes for your specific HS machinery codes.</p>
+                        <a href="#" class="link-btn">Open Tool</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="matching" class="section matching-section">
+            <div class="container matching-container">
+                <div class="matching-content">
+                    <h2>Supply & Demand Matching</h2>
+                    <p>Can't find what you're looking for? Tell us your requirements and we'll source it from our
+                        verified supplier network.</p>
+                    <form class="matching-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label>I looking for:</label>
+                            <select name="type">
+                                <option value="Sourcing">Sourcing a Product</option>
+                                <option value="Distributor">A Distributor</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Product Category</label>
+                            <input type="text" name="category" placeholder="e.g. Medical Devices">
+                        </div>
+                        <!-- Hidden Contact Fields (since we need to know who is asking) -->
+                        <div class="form-group">
+                            <label>Contact Email</label>
+                            <input type="email" name="email" placeholder="Your Email Address" required>
+                        </div>
+                        <button type="submit" class="btn">Start Matching</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Aamed Tech (Trade Division). All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://aamed.tech">Corporate Home</a>
+                <a href="https://deu.aamed.tech">German Exhibitions</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

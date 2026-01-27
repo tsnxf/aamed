@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="trade">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Surgical Robot Arm | Aamed Trade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../shared/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .gallery-row {
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: center;
+            background-color: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 0.75rem;
+            padding: var(--spacing-sm);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .gallery-image {
+            flex: 0 0 300px;
+            aspect-ratio: 4/3;
+            background-color: #f1f5f9;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .gallery-text {
+            flex: 1;
+        }
+
+        .gallery-text h3 {
+            margin-bottom: 0.5rem;
+            color: var(--color-accent-main);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-row {
+                flex-direction: column;
+            }
+
+            .gallery-image {
+                width: 100%;
+                flex: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="https://aamed.tech" class="logo">Aamed<span
+                    style="color: var(--color-accent-main)">.trade</span></a>
+            <nav class="nav-links">
+                <a href="../index.html#products">Back to Products</a>
+                <a href="../index.html#resources">Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Precision Surgical Robot Arm</h1>
+                <p class="lead">Advanced robotic assistance for minimally invasive surgery, featuring haptic feedback
+                    and sub-millimeter precision.</p>
+
+                <div class="gallery-container">
+                    <!-- Item 1 -->
+                    <div class="gallery-row">
+                        <div class="gallery-image">
+                            <span>Photo 1 (Front View)</span>
+                        </div>
+                        <div class="gallery-text">
+                            <h3>Ergonomic Console Design</h3>
+                            <p>The surgeon's console is designed for maximum comfort during long procedures, featuring
+                                immersive 3D high-definition display and intuitive finger-tip controls that translate
+                                hand movements into precise robotic actions.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="gallery-row">
+                        <div class="gallery-image">
+                            <span>Photo 2 (Side View)</span>
+                        </div>
+                        <div class="gallery-text">
+                            <h3>Multi-Articulated Arms</h3>
+                            <p>Four fully articulated robotic arms provide a range of motion greater than the human
+                                hand. The compact design allows for easy maneuvering in the operating room and reliable
+                                access to the surgical site.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="gallery-row">
+                        <div class="gallery-image">
+                            <span>Illustration (Diagram)</span>
+                        </div>
+                        <div class="gallery-text">
+                            <h3>System Architecture</h3>
+                            <p>A schematic view of the master-slave control loop, highlighting the real-time data
+                                processing unit that filters out hand tremors and ensures absolute safety and precision
+                                during delicate tissue manipulation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: var(--spacing-lg); display: grid; gap: var(--spacing-lg);">
+                    <div>
+                        <h3>Technical Specifications</h3>
+                        <ul>
+                            <li>Degrees of Freedom: 7</li>
+                            <li>Precision: &lt; 0.5mm</li>
+                            <li>Payload: 5kg</li>
+                            <li>Interface: Haptic Console</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Application Areas</h3>
+                        <p>Designed for laparoscopic procedures, orthopedic surgery, and microsurgery. Compatible with
+                            standard hospital imaging systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://aamed.tech">Corporate Home</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

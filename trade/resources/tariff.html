@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="trade">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tariff Calculator | Aamed Trade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../shared/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .gallery-row {
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: center;
+            background-color: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 0.75rem;
+            padding: var(--spacing-sm);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .gallery-image {
+            flex: 0 0 300px;
+            aspect-ratio: 4/3;
+            background-color: #f1f5f9;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .gallery-text {
+            flex: 1;
+        }
+
+        .gallery-text h3 {
+            margin-bottom: 0.5rem;
+            color: var(--color-accent-main);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-row {
+                flex-direction: column;
+            }
+
+            .gallery-image {
+                width: 100%;
+                flex: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="https://aamed.tech" class="logo">Aamed<span
+                    style="color: var(--color-accent-main)">.trade</span></a>
+            <nav class="nav-links">
+                <a href="../index.html#products">Products</a>
+                <a href="../index.html#resources">Back to Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Duty & Tariff Calculator</h1>
+                <p class="lead">Estimate your landed costs by calculating specific EU duties, VAT, and anti-dumping
+                    tariffs for machinery.</p>
+
+                <div class="gallery-container">
+                    <!-- Item 1 -->
+                    <div class="gallery-row">
+                        <div class="gallery-image">
+                            <span>Photo 1 (Web Interface)</span>
+                        </div>
+                        <div class="gallery-text">
+                            <h3>Intuitive Calculation Tool</h3>
+                            <p>Our online interface connects directly to the EU TARIC database. Simply enter your HS
+                                Code and Country of Origin, and the tool fetches current duty rates, including any
+                                temporary suspensions or quotas.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="gallery-row">
+                        <div class="gallery-image">
+                            <span>Photo 2 (Sample Report)</span>
+                        </div>
+                        <div class="gallery-text">
+                            <h3>Comprehensive Cost Breakdown</h3>
+                            <p>Generate detailed reports that break down costs into CIF value, basic customs duty,
+                                import VAT (Einfuhrumsatzsteuer), and total landed cost. Essential for accurate pricing
+                                strategies.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="gallery-row">
+                        <div class="gallery-image">
+                            <span>Illustration (Formula)</span>
+                        </div>
+                        <div class="gallery-text">
+                            <h3>Calculation Methodology</h3>
+                            <p>Understanding the math: Duty = (Value + Shipping + Insurance) × Duty Rate. VAT = (Value +
+                                Duty + Transport to Destination) × 19%. This illustration clarifies exactly where your
+                                money goes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: var(--spacing-lg);">
+                    <h3>How it Works</h3>
+                    <p>Enter your HS Code (Harmonized System Code) and country of origin to get an instant estimate.</p>
+                    <p><em>Links to official EU TARIC database are provided for verification.</em></p>
+                    <br>
+                    <a href="#" class="btn">Launch Calculator Tool</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://aamed.tech">Corporate Home</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

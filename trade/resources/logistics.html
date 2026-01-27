@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="trade">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics Partners | Aamed Trade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../shared/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .gallery-row {
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: center;
+            background-color: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 0.75rem;
+            padding: var(--spacing-sm);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .gallery-image {
+            flex: 0 0 300px;
+            aspect-ratio: 4/3;
+            background-color: #f1f5f9;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .gallery-text {
+            flex: 1;
+        }
+
+        .gallery-text h3 {
+            margin-bottom: 0.5rem;
+            color: var(--color-accent-main);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-row {
+                flex-direction: column;
+            }
+
+            .gallery-image {
+                width: 100%;
+                flex: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="https://aamed.tech" class="logo">Aamed<span
+                    style="color: var(--color-accent-main)">.trade</span></a>
+            <nav class="nav-links">
+                <a href="../index.html#products">Products</a>
+                <a href="../index.html#resources">Back to Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Logistics & Freight Directory</h1>
+                <p class="lead">Connect with verified logistics providers specializing in the China-Germany trade
+                    corridor (Rail, Sea, Air).</p>
+
+                <div class="gallery-container">
+                    <!-- Item 1 -->
+                    <div class="gallery-row">
+                        <div class="gallery-image">
+                            <span>Photo 1 (Container Ship)</span>
+                        </div>
+                        <div class="gallery-text">
+                            <h3>Maritime Freight Solutions</h3>
+                            <p>Partnering with major carriers like COSCO and Maersk, our listed providers offer reliable
+                                FCL (Full Container Load) and LCL (Less than Container Load) services from
+                                Shanghai/Ningbo to Rotterdam/Hamburg, ideal for heavy machinery.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="gallery-row">
+                        <div class="gallery-image">
+                            <span>Photo 2 (CR Express)</span>
+                        </div>
+                        <div class="gallery-text">
+                            <h3>China-Europe Railway Express</h3>
+                            <p>Utilizing the "New Silk Road", the CR Express offers a perfect balance of speed and cost.
+                                Transit times from Chongqing to Duisburg are approximately 14-16 days, significantly
+                                faster than sea freight and cheaper than air.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="gallery-row">
+                        <div class="gallery-image">
+                            <span>Illustration (Route Map)</span>
+                        </div>
+                        <div class="gallery-text">
+                            <h3>Integrated Logistics Network</h3>
+                            <p>This map illustrates our comprehensive warehousing and last-mile delivery network across
+                                Germany. From customs clearance at the border to direct delivery to your warehouse,
+                                verified partners handle every step.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: var(--spacing-lg);">
+                    <h3>Supported Routes</h3>
+                    <p>Our partners cover all major logistics routes:</p>
+                    <ul>
+                        <li><strong>Sea Freight:</strong> Shanghai/Ningbo to Hamburg/Rotterdam</li>
+                        <li><strong>Rail Freight:</strong> "Yixinou" (Yiwu-Madrid) and Chongqing-Duisburg lines</li>
+                        <li><strong>Air Freight:</strong> Direct flights from Beijing/Shanghai to Frankfurt</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://aamed.tech">Corporate Home</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

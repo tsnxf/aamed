@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="trade">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Regulations | Aamed Trade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../shared/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .gallery-row {
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: center;
+            background-color: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 0.75rem;
+            padding: var(--spacing-sm);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .gallery-image {
+            flex: 0 0 300px;
+            aspect-ratio: 4/3;
+            background-color: #f1f5f9;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .gallery-text {
+            flex: 1;
+        }
+
+        .gallery-text h3 {
+            margin-bottom: 0.5rem;
+            color: var(--color-accent-main);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-row {
+                flex-direction: column;
+            }
+
+            .gallery-image {
+                width: 100%;
+                flex: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="https://aamed.tech" class="logo">Aamed<span
+                    style="color: var(--color-accent-main)">.trade</span></a>
+            <nav class="nav-links">
+                <a href="../index.html#products">Products</a>
+                <a href="../index.html#resources">Back to Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>EU Import Regulations Guide</h1>
+                <p class="lead">Comprehensive guide to CE marking, machinery directives, and medical device regulations
+                    (MDR) for entering the German market.</p>
+
+                <div class="gallery-container">
+                    <!-- Item 1 -->
+                    <div class="gallery-row">
+                        <div class="gallery-image">
+                            <span>Photo 1 (Customs Procedures)</span>
+                        </div>
+                        <div class="gallery-text">
+                            <h3>Customs Documentation</h3>
+                            <p>Correctly filed documentation (EORI number, Commercial Invoice, Packing List) is the
+                                first step to smooth entry. Our guide details the specific requirements for HS coded
+                                machinery to avoid delays at the Port of Hamburg.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="gallery-row">
+                        <div class="gallery-image">
+                            <span>Photo 2 (CE Mark Label)</span>
+                        </div>
+                        <div class="gallery-text">
+                            <h3>CE Marking & Compliance</h3>
+                            <p>The CE mark is mandatory for machinery sold in the EEA. It signifies that products are
+                                assessed to meet high safety, health, and environmental protection requirements. We
+                                explain the self-certification vs. notified body process.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="gallery-row">
+                        <div class="gallery-image">
+                            <span>Illustration (MDR Flowchart)</span>
+                        </div>
+                        <div class="gallery-text">
+                            <h3>Regulatory Flowchart</h3>
+                            <p>This visual guide maps out the complex path for Medical Device Regulation (MDR) approval.
+                                From classification (Class I, IIa, IIb, III) to clinical evaluation and post-market
+                                surveillance obligations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: var(--spacing-lg);">
+                    <h3>Key Compliance Areas</h3>
+                    <p>Understanding the regulatory landscape is crucial for successful market entry. This guide covers:
+                    </p>
+                    <ul>
+                        <li>CE Declaration of Conformity</li>
+                        <li>Technical File Documentation</li>
+                        <li>Authorized Representatives in the EU</li>
+                        <li>WEEE and RoHS Directives</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://aamed.tech">Corporate Home</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

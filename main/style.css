@@ -8,6 +8,24 @@
     padding: var(--spacing-xl) 0;
     text-align: center;
     overflow: hidden;
+    /* Hero Background Image Settings */
+    background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), url('assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Optional: Parallax effect */
+    color: white;
+    /* Ensure text is readable */
+}
+
+/* Reverting text alignment to center for the background layout */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    /* Sit on top of overlay */
+    max-width: 800px;
+    /* Limit width for readability */
+    margin: 0 auto;
 }
 
 .hero-content h1 {
@@ -17,8 +35,19 @@
     font-weight: 800;
 }
 
+
+
+/* Remove separate image container styling as it's now background */
+.hero-image {
+    display: none;
+}
+
+/* Ensure gradient text still pops or adjust if needed on dark bg. 
+   On dark overlay, the existing blue gradient might need brightening or be just white.
+   Let's keep it but make sure it stands out. */
 .gradient-text {
-    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+    background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 100%);
+    /* Lighter blue for contrast */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

@@ -107,4 +107,33 @@ Then run these commands one by one:
     sudo certbot --nginx -d aamed.tech -d deu.aamed.tech -d trade.aamed.tech
     ```
 
+## Optional: Setup SSH for Password-less Git Pull
+To avoid typing your password every time you run `git pull`, set up an SSH key on your VPS:
+
+1.  **Generate an SSH key** (Run on VPS):
+    ```bash
+    ssh-keygen -t ed25519 -C "vps@aamed"
+    ```
+    (Press Enter 3 times to accept defaults and empty passphrase)
+
+2.  **Get your Public Key**:
+    ```bash
+    cat ~/.ssh/id_ed25519.pub
+    ```
+    Copy the entire output (starts with `ssh-ed25519 ...`).
+
+3.  **Add to GitHub**:
+    - Go to [GitHub Settings > SSH and GPG keys](https://github.com/settings/keys).
+    - Click **New SSH key**.
+    - Title: "Aamed VPS"
+    - Key: Paste the copied text.
+    - Click **Add SSH key**.
+
+4.  **Switch Remote to SSH** (Run on VPS inside `/var/www/aamed`):
+    ```bash
+    git remote set-url origin git@github.com:tsnxf/aamed.git
+    ```
+
+Now you can run `git pull` without a password!
+
 **Done!** Your sites should now be live.

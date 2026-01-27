@@ -96,6 +96,13 @@ Then run these commands one by one:
     ```
 
 6.  **Secure with SSL (HTTPS):**
+    First, install the Certbot Nginx plugin (if missing):
+    ```bash
+    sudo apt update
+    sudo apt install python3-certbot-nginx
+    ```
+
+    Then generate the certificates:
     ```bash
     sudo certbot --nginx -d aamed.tech -d deu.aamed.tech -d trade.aamed.tech
     ```

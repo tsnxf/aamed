@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="trade">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Products Collection | Aamed Trade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../shared/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .outdoor-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .outdoor-image-card {
+            background-color: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: all var(--transition-fast);
+        }
+
+        .outdoor-image-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .outdoor-image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="https://aamed.tech" class="logo">Aamed<span
+                    style="color: var(--color-accent-main)">.trade</span></a>
+            <nav class="nav-links">
+                <a href="../index.html#products">Back to Products</a>
+                <a href="../index.html#resources">Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Outdoor Products Collection</h1>
+                <p class="lead">Premium outdoor gear including hunting suites, General Leisure, Fashion, and more. Our
+                    collection features high-quality, durable materials designed for both functionality and style in the
+                    great outdoors.</p>
+
+                <div class="outdoor-gallery">
+                    <div class="outdoor-image-card">
+                        <img src="../assets/images/outdoor_1.png" alt="Outdoor Product 1">
+                    </div>
+                    <div class="outdoor-image-card">
+                        <img src="../assets/images/outdoor_2.png" alt="Outdoor Product 2">
+                    </div>
+                    <div class="outdoor-image-card">
+                        <img src="../assets/images/outdoor_3.png" alt="Outdoor Product 3">
+                    </div>
+                    <div class="outdoor-image-card">
+                        <img src="../assets/images/outdoor_4.png" alt="Outdoor Product 4">
+                    </div>
+                    <div class="outdoor-image-card">
+                        <img src="../assets/images/outdoor_5.jpg" alt="Outdoor Product 5">
+                    </div>
+                    <div class="outdoor-image-card">
+                        <img src="../assets/images/outdoor_6.png" alt="Outdoor Product 6">
+                    </div>
+                    <div class="outdoor-image-card">
+                        <img src="../assets/images/outdoor_7.png" alt="Outdoor Product 7">
+                    </div>
+                    <div class="outdoor-image-card">
+                        <img src="../assets/images/outdoor_8.png" alt="Outdoor Product 8">
+                    </div>
+                    <div class="outdoor-image-card">
+                        <img src="../assets/images/outdoor_9.png" alt="Outdoor Product 9">
+                    </div>
+                    <div class="outdoor-image-card">
+                        <img src="../assets/images/outdoor_10.png" alt="Outdoor Product 10">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://aamed.tech">Corporate Home</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

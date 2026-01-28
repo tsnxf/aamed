@@ -3,7 +3,18 @@
 /* Header Override */
 .header {
     border-bottom-color: rgba(16, 185, 129, 0.2);
+
     /* Green tint border */
+}
+
+/* Hero Section Background */
+.hero {
+    position: relative;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('assets/images/hero_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 

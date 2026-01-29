@@ -3,8 +3,6 @@
 /* Header Override */
 .header {
     border-bottom-color: rgba(16, 185, 129, 0.2);
-
-    /* Green tint border */
 }
 
 /* Hero Section Background */
@@ -17,11 +15,8 @@
     overflow: hidden;
 }
 
-
-
 .gradient-text {
     background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
-    /* Green gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

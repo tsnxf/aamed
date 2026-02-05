@@ -8,7 +8,7 @@
 /* Hero Section Background */
 .hero {
     position: relative;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('assets/images/hero_bg.jpg');
+    background-image: url('assets/images/hero_bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,11 +33,12 @@
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: var(--spacing-sm);
+    color: #ffffff;
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
-    color: var(--color-text-muted);
+    color: #ffffff;
     margin-bottom: var(--spacing-md);
 }
 

@@ -1,4 +1,4 @@
-# Step-by-Step Deployment Guide for Aamed.tech
+# Step-by-Step Deployment Guide for AAMed.tech
 
 Follow these steps exactly to deploy your websites.
 
@@ -125,7 +125,7 @@ To avoid typing your password every time you run `git pull`, set up an SSH key o
 3.  **Add to GitHub**:
     - Go to [GitHub Settings > SSH and GPG keys](https://github.com/settings/keys).
     - Click **New SSH key**.
-    - Title: "Aamed VPS"
+    - Title: "AAMed VPS"
     - Key: Paste the copied text.
     - Click **Add SSH key**.
 

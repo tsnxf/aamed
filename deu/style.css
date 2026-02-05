@@ -6,14 +6,20 @@
     /* Red tint border */
 }
 
-
+/* Hero Section Background */
+.hero {
+    position: relative;
+    background-image: url('assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
 
 .gradient-text {
-    background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
-    /* Red gradient */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #dc2626;
+    /* Solid red for German style */
 }
 
 .hero-content {
@@ -27,11 +33,13 @@
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: var(--spacing-sm);
+    color: #1a1a1a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
-    color: var(--color-text-muted);
+    color: #ffffff;
     margin-bottom: var(--spacing-md);
 }
 
@@ -41,14 +49,37 @@
     justify-content: center;
 }
 
+.hero-actions .btn {
+    background: rgba(220, 38, 38, 0.5);
+    color: #ffffff;
+    border: 2px solid rgba(220, 38, 38, 0.7);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    min-width: 180px;
+    padding: 0.75rem 1.5rem;
+}
+
+.hero-actions .btn:hover {
+    background: rgba(220, 38, 38, 0.75);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
 .btn-outline {
-    background: transparent;
-    border: 1px solid var(--color-border);
-    color: var(--color-text-main);
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    color: #1a1a1a;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 180px;
+    padding: 0.75rem 1.5rem;
 }
 
 .btn-outline:hover {
-    border-color: var(--color-text-main);
+    background: rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Exhibition Cards specific */

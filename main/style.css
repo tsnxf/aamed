@@ -9,13 +9,12 @@
     text-align: center;
     overflow: hidden;
     /* Hero Background Image Settings */
-    /* Hero Background Image Settings */
-    /* Light warm overlay instead of dark blue */
-    background-image: linear-gradient(rgba(253, 251, 247, 0.85), rgba(253, 251, 247, 0.75)), url('assets/images/hero-bg.jpg');
+    background-image: url('assets/images/hero-bg.jpg');
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    /* Optional: Parallax effect */
+    background-position: top center;
+    background-attachment: scroll;
+    /* Image stays at top and scrolls with page */
+    background-repeat: no-repeat;
     color: var(--color-text-main);
     /* Ensure text is readable */
 }
@@ -56,7 +55,7 @@
 
 .hero-subtitle {
     font-size: 1.25rem;
-    color: var(--color-text-muted);
+    color: #ffffff;
     max-width: 600px;
     margin: 0 auto var(--spacing-md);
 }
@@ -110,6 +109,23 @@
 }
 
 .section-header p {
+    color: var(--color-text-muted);
+}
+
+/* Vision Section */
+.vision-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vision-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.vision-content p {
+    font-size: 1.125rem;
     color: var(--color-text-muted);
 }
 

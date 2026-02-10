@@ -201,15 +201,24 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.logo {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    /* Bold serif */
-    font-size: 1.75rem;
+.header-logo {
+    height: 1.75rem;
+    width: auto;
+    object-fit: contain;
+}
+
+.page-title {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 0.95rem;
     letter-spacing: -0.03em;
     color: var(--color-text-main);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-links {

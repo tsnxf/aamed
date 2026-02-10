@@ -113,15 +113,30 @@
 }
 
 /* Vision Section */
+.vision-section {
+    background-image: url('../shared/images/vision_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 .vision-content {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.65);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .vision-content h2 {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-sm);
+    color: var(--color-text-main);
 }
 
 .vision-content p {
